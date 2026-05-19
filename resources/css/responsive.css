@@ -1,0 +1,120 @@
+/* Responsive Grid Layouts - Mobile Breakpoints */
+
+/* ─── Hero 2-col → 1-col ─── */
+@media (max-width: 900px) {
+    .hero-grid-layout {
+        grid-template-columns: 1fr !important;
+        text-align: center !important;
+    }
+    .hero-grid-layout > div:first-child {
+        text-align: center !important;
+    }
+    .hero-grid-layout > div:last-child {
+        display: none !important;
+    }
+    .hero-cta-group {
+        justify-content: center !important;
+    }
+    .hero-trust-row {
+        justify-content: center !important;
+    }
+    .hero-stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* ─── About 2-col → 1-col ─── */
+@media (max-width: 900px) {
+    .about-grid-layout {
+        grid-template-columns: 1fr !important;
+        gap: 2.5rem !important;
+    }
+    .about-visual-col {
+        display: none !important;
+    }
+}
+
+/* ─── Report Features 3-col → 2-col → 1-col ─── */
+@media (max-width: 960px) {
+    .report-grid-layout {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media (max-width: 600px) {
+    .report-grid-layout {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ─── Customers 2-col → 1-col ─── */
+@media (max-width: 720px) {
+    .customers-grid-layout {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ─── Steps 3-col → 1-col ─── */
+@media (max-width: 768px) {
+    .steps-grid-layout {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ─── Why us reasons 4-col → 2-col → 1-col ─── */
+@media (max-width: 900px) {
+    .reasons-grid-layout {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media (max-width: 550px) {
+    .reasons-grid-layout {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ─── Testimonials 3-col → 1-col ─── */
+@media (max-width: 820px) {
+    .testimonials-grid-layout {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ─── Contact 3-col → 1-col ─── */
+@media (max-width: 600px) {
+    .contact-social-grid {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* ─── Footer 3-col → 1-col ─── */
+@media (max-width: 768px) {
+    .footer-grid-layout {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+    .footer-bottom-row {
+        flex-direction: column !important;
+        text-align: center !important;
+    }
+}
+
+/* ─── Stats 4-col → 2-col ─── */
+@media (max-width: 640px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+/* ─── Smaller fonts on mobile ─── */
+@media (max-width: 480px) {
+    .hero-headline { font-size: 2rem !important; }
+    .section-title { font-size: 1.6rem !important; }
+    .customer-icon { width: 70px !important; height: 70px !important; font-size: 2rem !important; }
+    .customer-card { padding: 2.5rem 1.5rem !important; }
+    .floating-cta { left: 1rem !important; bottom: 1rem !important; }
+}
+
+/* ─── General padding on mobile ─── */
+@media (max-width: 640px) {
+    section { padding-top: 4.5rem !important; padding-bottom: 4.5rem !important; }
+}

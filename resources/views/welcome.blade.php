@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- SEO Meta Tags -->
+    <title>أطمئن | فحص تاريخ السيارات الكورية بالـ VIN - اليمن عدن</title>
+    <meta name="description" content="أطمئن - خدمة متخصصة في فحص تاريخ السيارات الكورية المستوردة في اليمن عبر رقم الهيكل VIN. تحقق من الحوادث والغرق والعداد وسجل الملكية قبل الشراء." />
+    <meta name="keywords" content="فحص سيارة, VIN, رقم الهيكل, سيارات كورية, اليمن, عدن, تقرير سيارة, حوادث, سجل السيارة, أطمئن" />
+    <meta name="author" content="أطمئن - Vehicle History Reports Yemen" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="{{ url('/') }}" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="{{ url('/') }}" />
+    <meta property="og:title" content="أطمئن | فحص تاريخ السيارات الكورية - اليمن" />
+    <meta property="og:description" content="تحقق من تاريخ السيارة الكورية عبر رقم الهيكل VIN قبل الشراء. تقرير شامل يشمل الحوادث والغرق والعداد وسجل الملكية." />
+    <meta property="og:image" content="{{ asset('images/logo.png') }}" />
+    <meta property="og:locale" content="ar_YE" />
+    <meta property="og:site_name" content="أطمئن" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="أطمئن | فحص تاريخ السيارات الكورية" />
+    <meta name="twitter:description" content="تحقق من تاريخ سيارتك الكورية قبل الشراء عبر رقم الهيكل VIN" />
+    <meta name="twitter:image" content="{{ asset('images/logo.png') }}" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ asset('images/logo.png') }}" />
+    <link rel="apple-touch-icon" href="{{ asset('images/logo.png') }}" />
+
+    <!-- Google Fonts (preload for performance) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "أطمئن",
+        "alternateName": "Itma2en - Vehicle History Reports Yemen",
+        "description": "خدمة متخصصة في فحص تاريخ السيارات الكورية المستوردة عبر رقم الهيكل VIN في اليمن",
+        "url": "{{ url('/') }}",
+        "logo": "{{ asset('images/logo.png') }}",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "عدن",
+            "addressCountry": "YE"
+        },
+        "areaServed": "اليمن",
+        "serviceType": "Vehicle History Report"
+    }
+    </script>
+
+    @viteReactRefresh
+    @vite(['resources/css/app.css', 'resources/js/app.jsx'])
+</head>
+<body>
+    <!-- React root -->
+    <div id="app" role="main"></div>
+
+    <!-- Fallback for no-JS -->
+    <noscript>
+        <div style="text-align:center; padding: 3rem; font-family: Cairo, sans-serif; direction: rtl; background: #040d1a; color: white; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+            <div>
+                <h1>أطمئن</h1>
+                <p>يرجى تفعيل JavaScript لتصفح الموقع بشكل صحيح.</p>
+            </div>
+        </div>
+    </noscript>
+</body>
+</html>
